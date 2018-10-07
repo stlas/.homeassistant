@@ -1,0 +1,204 @@
+#### GROUPS
+  wetter_group:
+    name: Wetter
+    entities:
+      - camera.Weather_YR
+      - camera.aktuelle_wetterkarte_bw
+      - camera.Aktuelles_Wetterradar_BW
+      - camera.wettervorhersage_72_h
+      - camera.5_tage_wettervorhersage
+      - camera.Wettervorhersage_BW_Heute_Fruh
+      - camera.Wettervorhersage_BW_Heute_Mittag
+      - camera.Wettervorhersage_BW_Heute_Spat
+      - camera.Wettervorhersage_BW_Morgen_Fruh
+      - camera.Wettervorhersage_BW_Morgen_Spat
+      - camera.Wettervorhersage_BW_Ubermorgen_Fruh
+      - camera.Wettervorhersage_BW_Ubermorgen_Spat
+      - camera.Wettervorhersage_BW_in_4_Tagen_Fruh
+      - camera.Wettervorhersage_BW_in_4_Tagen_Spat
+
+  cameras_group:
+    name: Kameras
+    entities:
+      - camera.WohnzimmerCam
+#      - camera.Bahnhof_Pforzheim_WebCam
+      - camera.Pforzheim_Dillweissenstein_WebCam
+      - camera.Autobahn_A8_Pforzheim-Ost_WebCam
+#      - camera.Pforzheim-Dillweißenstein_WebCam
+#      - camera.Pforzheim_Bahnhofstraße_WebCam
+
+      
+  umwelt_group:
+    name: Umwelt
+    entities:
+      - sun.sun
+      - sensor.yr_symbol
+      - sensor.dark_sky_summary
+      - sensor.dark_sky_icon
+      - sensor.dark_sky_nearest_storm_distance
+      - sensor.dark_sky_precip
+      - sensor.dark_sky_precip_intensity
+      - sensor.dark_sky_precip_probability
+      - sensor.dark_sky_temperature
+      - sensor.dark_sky_apparent_temperature
+      - sensor.dark_sky_dew_point
+      - sensor.dark_sky_wind_speed
+      - sensor.dark_sky_wind_bearing
+      - sensor.dark_sky_cloud_cover
+      - sensor.dark_sky_humidity
+      - sensor.dark_sky_pressure
+      - sensor.dark_sky_visibility
+      - sensor.dark_sky_ozone
+      - sensor.dark_sky_minutely_summary
+      - sensor.dark_sky_hourly_summary
+      - sensor.dark_sky_daily_summary
+      - sensor.dark_sky_temperature_max
+      - sensor.dark_sky_temperature_min
+      - sensor.dark_sky_apparent_temperature_max
+      - sensor.dark_sky_apparent_temperature_min
+      - sensor.dark_sky_precip_intensity_max
+      - sensor.dark_sky_uv_index
+      - sensor.dark_sky_Cloud_Coverage
+      - sensor.dark_sky_Daily_High_Apparent_Temperature
+      - sensor.dark_sky_Daily_Low_Apparent_Temperature
+      - sensor.dark_sky_Daily_High_Temperature
+      - sensor.dark_sky_Daily_Low_Temperature
+      - sensor.dark_sky_Daily_Max_Precip_Intensity
+      
+  netzwerk_group:
+    name: Netzwerk
+    entities:
+      - device_tracker.lumigatewayv3miio57628068
+      - device_tracker.yeelinklightcolor1miio73000022
+      - device_tracker.alessandra
+      - device_tracker.android2e83cde9dd3b3dbf
+      - device_tracker.android39041de9183eaed8
+      - device_tracker.androide578148184b8e89f
+      - device_tracker.chromecast
+      - device_tracker.desktopksua9hu
+      - device_tracker.espwohnzimmersensoren
+      - device_tracker.fritzrepeater
+      - device_tracker.galaxys6
+      - device_tracker.googlehomekueche
+      - device_tracker.googlehomestefan
+      - device_tracker.harmonyhub
+      - device_tracker.hassio
+      - device_tracker.herbert
+      - device_tracker.ipcam
+      - device_tracker.kodixtreamer
+      - device_tracker.lgg5
+      - device_tracker.libreelec
+      - device_tracker.lierdalilinkc07fec
+      - device_tracker.mediapadt18
+      - device_tracker.pc021122a3a000
+      - device_tracker.pc19216817830
+      - device_tracker.pc19216817840
+      - device_tracker.pc42b837fffeab7290
+      - device_tracker.perrypcperry
+      - device_tracker.philipshue
+      - device_tracker.raspberrypi
+      - device_tracker.redminote4
+      - device_tracker.schalterstehlampeaquarium
+      - device_tracker.slcloud
+      - device_tracker.smp900
+      - device_tracker.stefan
+      - device_tracker.tado
+      - device_tracker.tm5
+      - device_tracker.tvq9f
+      - device_tracker.ums
+      - device_tracker.universalmediaserver
+      - device_tracker.vfd1400
+      - device_tracker.x204n
+
+  heizung_group:
+    name: Heizung
+    entities:
+      - sensor.hwa33_tado_bridge_status
+      - sensor.heizung_heating
+      - sensor.heizung_humidity
+      - sensor.heizung_link
+      - sensor.heizung_overlay
+      - sensor.heizung_power
+      - sensor.heizung_tado_mode
+      - sensor.heizung_temperature
+
+  lichter_wohnzimmer_group:
+    name: Lichter im Wohnzimmer
+    entities:
+      - light.wohnzimmer
+      - light.hgrp0000000014
+      - light.hue_color_lamp_1
+      - light.hue_color_lamp_2
+      - light.hue_color_lamp_3
+      - light.Wohnzimmer_Yeelight
+      - light.wohnzimmer_led
+      
+####################################### Multisensor ####################################################
+  wohnzimmer_sensoren:  
+    name: Wohnzimmer Sensoren
+    entities: 
+      - sensor.wohnzimmer_feuchtigkeit  
+      - sensor.wohnzimmer_temperatur  
+      - sensor.wohnzimmer_helligkeit  
+      - sensor.Wohnzimmer_Wahrnehmungstemperatur  
+      - sensor.wohnzimmer_bewegung  
+      - light.wohnzimmer_led
+##################################### Ende Multisensor #################################################
+
+#### VIEWS
+#  default_view:
+  allgemein:
+    view: yes
+    name: Allgemein
+    entities:
+      - group.heizung_group
+      - group.sensoren_group
+      - group.umwelt_group
+    
+  wohnzimmer_view:
+    view: yes
+    name: Wohnzimmer
+    entities:
+      - camera.wohnzimmercam
+      - group.wohnzimmer_sensoren
+      - group.lichter_wohnzimmer_group
+      - media_player.kodi_xtreamer
+      - media_player.fernseher_wohnzimmer
+
+  gang_view:
+    view: yes
+    name: Gang
+    entities:
+      - binary_sensor.EN_SL1_Switch
+      - binary_sensor.door_window_sensor_158d0001aac2de
+
+  netzwerk_view:
+    view: yes
+    name: Netzwerk
+    entities:
+      - group.netzwerk_group
+
+  wetter_view:
+    view: yes
+    name: Wetter
+    entities:
+      - group.umwelt_group
+      - group.wetter_group
+
+  cameras_view:
+    view: yes
+    name: Kameras
+    entities:
+      - group.cameras_group
+
+  familie_view:
+    view: yes
+    name: Familie
+    entities:
+      - device_tracker.alessandra
+      - device_tracker.stefan
+
+  zones:
+    name: Zones
+    entities:
+      - binary_sensor.floorplan

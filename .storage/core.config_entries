@@ -1,0 +1,39 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "cast",
+                "entry_id": "1e515b5d2cb147d9a30ade93d6f44b33",
+                "source": "discovery",
+                "title": "Google Cast",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "bridge_id": "001788FFFE7EA2A0",
+                    "host": "192.168.178.55",
+                    "username": "xyrjjCZXHOwaHJREjo1T6xkjeiyEwhzwwUm-K3qK"
+                },
+                "domain": "hue",
+                "entry_id": "5d528dba233f495aaaec3adc5d10da07",
+                "source": "discovery",
+                "title": "Philips hue",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "mqtt",
+                "entry_id": "4510a9bbdb294d4fa0fea352a72df507",
+                "source": "import",
+                "title": "configuration.yaml",
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

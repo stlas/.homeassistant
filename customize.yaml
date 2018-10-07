@@ -1,0 +1,420 @@
+# Binary Sensors
+binary_sensor.door_window_sensor_158d0001aac2de:
+  friendly_name: miEingangstuer
+  icon: mdi:door
+binary_sensor.motion_sensor_158d0001b1603a:
+  friendly_name: miBewegung
+  icon: mdi:account
+binary_sensor.switch_158d0001e18b54:
+  friendly_name: miSchalter
+  icon: mdi:brightness-1
+binary_sensor.en_sl1_switch:
+  friendly_name: Enocean Switch 1
+
+# Cameras
+camera.5_tage_wettervorhersage_pforzheim:
+  friendly_name: 5 Tages Wettervorhersage Pforzheim
+camera.aktuelle_wetterkarte_bw:
+  friendly_name: Aktuelles Wetter in BW
+camera.aktuelles_wetterradar_bw:
+  friendly_name: Wetterradar BW
+camera.pforzheim_bahnhofstrasse_webcam:
+  friendly_name: Webcam Bahnhofstraße
+camera.wettervorhersage_72_h_pforzheim:
+  friendly_name: Wettervorhersage 72 h Pforzheim
+camera.wettervorhersage_bw_heute_fruh:
+  friendly_name: Wetter Heute Vormittag BW
+camera.wettervorhersage_bw_heute_mittag:
+  friendly_name: Wetter Heute Mittag BW
+camera.wettervorhersage_bw_heute_nacht:
+  friendly_name: Wetter Heute Nacht BW
+camera.wettervorhersage_bw_heute_spat:
+  friendly_name: Wetter Heute Nachmittag BW
+camera.wettervorhersage_bw_in_4_tagen_fruh:
+  friendly_name: Wetter in 4 Tagen Vormittags BW
+camera.wettervorhersage_bw_in_4_tagen_spat:
+  friendly_name: Wetter in 4 Tagen Nachmittags BW
+camera.wettervorhersage_bw_morgen_fruh:
+  friendly_name: Wetter Morgen Vormittags BW
+camera.wettervorhersage_bw_morgen_spat:
+  friendly_name: Wetter Morgen Nachmittags BW
+camera.wettervorhersage_bw_ubermorgen_fruh:
+  friendly_name: Wetter Übermorgen Vormittags BW
+camera.wettervorhersage_bw_ubermorgen_spat:
+  friendly_name: Wetter Übermorgen Nachmittags BW
+camera.wohnzimmercam:
+  friendly_name: Wohnzimmer Kamera
+
+# Climate
+climate.heizung:
+  friendly_name: Heizung Steuerung
+
+# Device Tracker
+device_tracker.lumigatewayv3miio57628068:
+  friendly_name: miGateway
+  icon: mdi:ajust
+device_tracker.yeelinklightcolor1miio73000022:
+  friendly_name: yee Hängelampe Wohnzimmer
+  icon: mdi:lamp
+device_tracker.alessandra:
+  friendly_name: Alessandras Handy
+device_tracker.android2e83cde9dd3b3dbf:
+  friendly_name: Unbekannt
+device_tracker.android39041de9183eaed8:
+  friendly_name: Unbekannt
+device_tracker.androide578148184b8e89f:
+  friendly_name: Unbekannt
+device_tracker.chromecast:
+  friendly_name: Chromecast Wohnzimmer
+device_tracker.desktopksua9hu:
+  friendly_name: ???
+device_tracker.espwohnzimmersensoren:
+  friendly_name: ESP Wohnzimmer Sensoren
+device_tracker.fritzrepeater:
+  friendly_name: Fritz!Repeater
+device_tracker.galaxys6:
+  friendly_name: Samsung Galaxy S6
+device_tracker.googlehomekueche:
+  friendly_name: Google Home Küche
+device_tracker.googlehomestefan:
+  friendly_name: Google Home Stefan
+device_tracker.harmonyhub:
+  friendly_name: Harmony Hub
+device_tracker.hassio:
+  friendly_name: Hassio Raspberry Pi
+device_tracker.herbert:
+  friendly_name: Fritz!Box Herbert
+device_tracker.ipcam:
+  friendly_name: IP Kamera Wohnzimmer
+device_tracker.kodixtreamer:
+  friendly_name: KODI Xtreamer
+device_tracker.lgg5:
+  friendly_name: LG G5
+device_tracker.libreelec:
+  friendly_name: LibreELEC Raspberry Pi
+device_tracker.lierdalilinkc07fec:
+  friendly_name: ???
+device_tracker.mediapadt18:
+  friendly_name: Media Pad
+device_tracker.pc021122a3a000:
+  friendly_name: ???
+device_tracker.pc19216817830:
+  friendly_name: ???
+device_tracker.pc19216817840:
+  friendly_name: ???
+device_tracker.pc42b837fffeab7290:
+  friendly_name: ???
+device_tracker.perrypcperry:
+  friendly_name: Alessandras PC
+device_tracker.philipshue:
+  friendly_name: Philips Hue
+device_tracker.raspberrypi:
+  friendly_name: Raspberry Pi
+device_tracker.redminote4:
+  friendly_name: Redmi Note 4
+device_tracker.schalterstehlampeaquarium:
+  friendly_name: Sonof Stehlampe Wohnzimmer
+device_tracker.slcloud:
+  friendly_name: SL Cloud
+device_tracker.smp900:
+  friendly_name: Samsung Note 12
+device_tracker.stefan:
+  friendly_name: Stefan
+device_tracker.tado:
+  friendly_name: TADO
+device_tracker.tm5:
+  friendly_name: Thermomix TM5
+device_tracker.tvq9f:
+  friendly_name: TV Q9F
+device_tracker.ums:
+  friendly_name: Universal Media Server
+device_tracker.universalmediaserver:
+  friendly_name: Universal Media Server
+device_tracker.vfd1400:
+  friendly_name: Vodafone VFD 1400
+device_tracker.x204n:
+  friendly_name: Lexmark X204n
+
+# Lights
+light.hue_color_lamp_1:
+  friendly_name: Hue Lampe 1
+light.hue_color_lamp_2:
+  friendly_name: Hue Lampe 2
+light.hue_color_lamp_3:
+  friendly_name: Hue Lampe 3
+light.wohnzimmer:
+  friendly_name: Hue Lampen Wohnzimmer 
+light.wohnzimmer_led:
+  friendly_name: Wohnzimmer Sensor LED
+light.wohnzimmer_yeelight:
+  friendly_name: Yee Wohnzimmer Lampe 
+light.gateway_light_34ce008d61f1:
+  friendly_name: miGatewayLicht
+  icon: mdi:album
+light.hgrp0000000014:
+  friendly_name: hue3KugelLampe
+  entity_picture: hue_lamp.svg
+  emulated_hue_hidden: false
+
+# Media-Player
+media_player.fernseher_wohnzimmer:
+  friendly_name: Chromecast Wohnzimmer
+media_player.kuche:
+  friendly_name: Google Home Küche
+media_player.q9f_tv:
+  friendly_name: Q9F TV
+media_player.kodi_xtreamer:
+  friendly_name: KODI Xtreamer
+  entity_picture: /home/homeassistant/.homeassistant/www/xtreamer.png
+media_player.kodi_libreelec:
+  friendly_name: KODI LibreELEC
+  entity_picture: /local/libreelec.png
+media_player.samsungtv:
+  friendly_name: Samsung TV Q9F
+  entity_picture: /local/samsungtv.jpg
+
+# Fernsteuerungen
+remote.harmony_wohnzimmer:
+  friendly_name: Harmony
+
+#Sensors
+sensor.illumination_34ce008d61f1:
+  friendly_name: miBeleuchtung
+# DarkSky Wetterinfos
+sensor.dark_sky_apparent_temperature:
+  friendly_name: Dark Sky Gefühlte Temperatur
+sensor.dark_sky_cloud_coverage:
+  friendly_name: Dark Sky Wolken Bedeckung
+sensor.dark_sky_daily_high_apparent_temperature:
+  friendly_name: Dark Sky gefühlte Maximaltemperatur täglich
+sensor.dark_sky_daily_high_temperature:
+  friendly_name: Dark Sky Maximaltemperatur täglich
+sensor.dark_sky_daily_low_apparent_temperature:
+  friendly_name: Dark Sky gefühlte Minimaltemperatur täglich
+sensor.dark_sky_daily_low_temperature:
+  friendly_name: Dark Sky Minimaltemperatur täglich
+sensor.dark_sky_daily_max_precip_intensity:
+  friendly_name: Dark Sky Die maximal erwartete Niederschlagsintensität
+sensor.dark_sky_daily_summary:
+  friendly_name: Dark Sky Tages Zusammenfassung
+sensor.dark_sky_dew_point:
+  friendly_name: Dark Sky Taupunkt
+sensor.dark_sky_hourly_summary:
+  friendly_name: Dark Sky Stündliche Zusammenfassung
+sensor.dark_sky_humidity:
+  friendly_name: Dark Sky Feuchtigkeit
+sensor.dark_sky_icon:
+  friendly_name: Dark Sky Symbol
+sensor.dark_sky_minutely_summary:
+  friendly_name: Dark Sky Minütliche Zusammenfassung
+sensor.dark_sky_nearest_storm_distance:
+  friendly_name: Dark Sky Minimaler Abstand zum nächsten Sturm
+sensor.dark_sky_ozone:
+  friendly_name: Dark Sky Ozon
+sensor.dark_sky_precip:
+  friendly_name: Dark Sky Niederschlagsart
+sensor.dark_sky_precip_intensity:
+  friendly_name: Dark Sky Niederschlagsintensität
+sensor.dark_sky_precip_probability:
+  friendly_name: Dark Sky Niederschlagswahrscheinlichkeit
+sensor.dark_sky_pressure:
+  friendly_name: Dark Sky Luftdruck
+sensor.dark_sky_summary:
+  friendly_name: Dark Sky Zusammenfassung
+sensor.dark_sky_temperature:
+  friendly_name: Dark Sky Temperatur
+sensor.dark_sky_uv_index:
+  friendly_name: Dark Sky UV Index
+sensor.dark_sky_visibility:
+  friendly_name: Dark Sky Sichtweite
+sensor.dark_sky_wind_bearing:
+  friendly_name: Dark Sky Windrichtung in ° aus Nord
+sensor.dark_sky_wind_speed:
+  friendly_name: Dark Sky Windgeschwindigkeit
+# DWD Wetterinfos
+sensor.dwdweatherwarnings_advance_warning_level:
+  friendly_name: DWD Zukünftige Wetterwarnungen
+sensor.dwdweatherwarnings_current_warning_level:
+  friendly_name: DWD Aktuelle Wetterwarnungen
+# Heizung
+sensor.heizung_heating:
+  friendly_name: Heizung Leistung
+sensor.heizung_humidity:
+  friendly_name: Heizung Feuchtigkeit
+sensor.heizung_link:
+  friendly_name: Heizung Verbindungsstatus
+sensor.heizung_overlay:
+  friendly_name: Heizung Overlay
+sensor.heizung_power:
+  friendly_name: Heizung Status
+sensor.heizung_tado_mode:
+  friendly_name: Heizung Tado Mode
+sensor.heizung_temperature:
+  friendly_name: Heizung Temperatur
+sensor.hwa33_tado_bridge_status:
+  friendly_name: Heizung Tado Status
+# Phone
+sensor.phone:
+  friendly_name: Phone
+# SABnzbd
+sensor.sabnzbd_disk:
+  friendly_name: SABnzbd Festplattengröße
+sensor.sabnzbd_disk_free:
+  friendly_name: SABnzbd freier Speicherplatz
+sensor.sabnzbd_left:
+  friendly_name: SABnzbd Noch zu verarbeiten
+sensor.sabnzbd_queue:
+  friendly_name: SABnzbd In Arbeit
+sensor.sabnzbd_queue_count:
+  friendly_name: SABnzbd Anzahl Dateien in Arbeit
+sensor.sabnzbd_speed:
+  friendly_name: SABnzbd Download Geschwindigkeit
+sensor.sabnzbd_status:
+  friendly_name: SABnzbd Status
+sensor.sabnzbd_status_2:
+  friendly_name: SABnzbd Status 2
+# Wohnzimmer Sensoren
+sensor.wohnzimmer_feuchtigkeit:
+  friendly_name: Wohnzimmer Sensor Feuchtigkeit
+  icon: mdi:oil-temperature
+sensor.wohnzimmer_temperatur:
+  friendly_name: Wohnzimmer Sensor Temperatur
+  icon: mdi:water-percent
+sensor.wohnzimmer_bewegung:
+  friendly_name: Wohnzimmer Sensor Bewgungserkennung
+  icon: mdi:eye
+sensor.wohnzimmer_helligkeit:
+  friendly_name: Wohnzimmer Sensor Helligkeit
+  icon: mdi:theme-light-dark
+sensor.wohnzimmer_wahrnehmungstemperatur:
+  friendly_name: Wohnzimmer Sensor Wahrnehmungstemperatur
+sensor.yr_symbol:
+  friendly_name: YR Symbol
+sensor.fritz_netmonitor:
+  friendly_name: Netzmonitor
+
+sun.sun:
+  friendly_name: Sonne
+
+switch.plug_158d0001de7ea1:
+  friendly_name: miSteckdose
+  icon: mdi:power-socket-eu
+
+zone.home:
+  friendly_name: Zone Home
+
+
+# Floorplan
+binary_sensor.floorplan:
+  custom_ui_state_card: state-card-floorplan
+  config:
+    name: Demo Floorplan
+    image: /local/custom_ui/floorplan/floorplan.svg
+    stylesheet: /local/custom_ui/floorplan/floorplan.css
+    warnings:
+    date_format: DD.MM.YYYY
+    last_motion_entity: sensor.template_last_motion
+    last_motion_class: last-motion
+    groups:
+    - name: Dark Sky Sensors
+      entities:
+      - sensor.home_dark_sky_icon
+      image_template: ' var imageName = "";
+
+        switch (entity.state) { case "clear-day": imageName = "day"; break;
+
+        case "clear-night": imageName = "night"; break;
+
+        case "partly-cloudy-day": imageName = "cloudy-day-1"; break;
+
+        case "partly-cloudy-night": imageName = "cloudy-night-1"; break;
+
+        case "cloudy": imageName = "cloudy"; break;
+
+        case "rain": imageName = "rainy-1"; break;
+
+        case "snow": imageName = "snowy-1"; break; }
+
+        return "/local/custom_ui/floorplan/images/weather/" + imageName + ".svg"; '
+    - name: Sensors
+      entities:
+      - sensor.dark_sky_temperature
+      text_template: '${entity.state ? Math.ceil(entity.state) : "undefined"}'
+      class_template: ' var temp = parseFloat(entity.state.replace("°", "")); if (temp
+        < 10) return "temp-low"; else if (temp < 30) return "temp-medium"; else return
+        "temp-high"; '
+    - name: Lights
+      entities:
+      - light.hallway
+      - light.living_room
+      - light.patio
+      - group.kitchen_lights
+      - group.living_room_lights
+      states:
+      - state: 'on'
+        class: light-on
+      - state: 'off'
+        class: light-off
+      action:
+        domain: homeassistant
+        service: toggle
+    - name: Switches
+      entities:
+      - switch.doorbell
+      states:
+      - state: 'on'
+        class: doorbell-on
+      - state: 'off'
+        class: doorbell-off
+    - name: NVR
+      entities:
+      - binary_sensor.blue_iris_nvr
+      text_template: '${(entity.state === "on") ? "online" : "offline"}'
+      states:
+      - state: 'off'
+        class: danger-text
+      - state: 'on'
+        class: success-text
+    - name: Alarm Panel
+      entities:
+      - alarm_control_panel.alarm
+      states:
+      - state: armed_away
+        class: alarm-armed
+      - state: armed_home
+        class: alarm-armed
+      - state: disarmed
+        class: alarm-disarmed
+    - name: Binary sensors
+      entities:
+      - binary_sensor.EN_SL1_Switch
+      states:
+      - state: 'off'
+        class: info-background
+      - state: 'on'
+        class: warning-background
+      state_transitions:
+      - name: On to off
+        from_state: 'on'
+        to_state: 'off'
+        duration: 10
+    - name: Cameras
+      entities:
+      - camera.WohnzimmerCam
+      states:
+      - state: idle
+        class: camera-idle
+    - name: Media Players
+      entities:
+      - media_player.alfresco
+      - media_player.ensuite
+      - media_player.salon
+      states:
+      - state: 'off'
+        class: squeezebox-off
+      - state: idle
+        class: squeezebox-off
+      - state: paused
+        class: squeezebox-off
+      - state: playing
+        class: squeezebox-on

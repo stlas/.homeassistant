@@ -1,0 +1,70 @@
+{
+    "data": {
+        "credentials": [
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "stlas"
+                },
+                "id": "b4fb41d9d3f943e3a29abc3e4ca89f9d",
+                "user_id": "66721ec5a6e8404bb3c58f032288d938"
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://hassio:8123/",
+                "client_name": null,
+                "created_at": "2018-10-06T15:44:12.586538+00:00",
+                "id": "a5725d24d93145e18033d6be2271816b",
+                "jwt_key": "d00a6f0a73c798150abf85479b9178d1819ce68baa8b3ab918cf7a49f1709fd4ecc16f5561b6a6533ca17dae4c0a3a627ba7017be8a8c9dc1dad0fcc71138d98",
+                "last_used_at": "2018-10-06T23:14:27.885165+00:00",
+                "last_used_ip": "192.168.178.30",
+                "token": "36d6efdcc82c0cdc949c8771e4f06ceef8e57063d4d7fe35ffdd34cdc1854513b9e2eb1cab90f664a2d4f20b60c067352cfa705e1607a22d2dbed9ef5f73de0c",
+                "token_type": "normal",
+                "user_id": "66721ec5a6e8404bb3c58f032288d938"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://hassio:8123/",
+                "client_name": null,
+                "created_at": "2018-10-06T11:50:08.706195+00:00",
+                "id": "a9f1b5fea4314f70b067af293210450f",
+                "jwt_key": "5497319b670d933b4c7a1212d8488d4fc8519f8b1cb649a28446ebc455bdf09f8acfe3f9baedd07ccdb979dfe5a19f8cd616a68b4a5c25d752069879fc6be2a9",
+                "last_used_at": "2018-10-07T13:42:14.072165+00:00",
+                "last_used_ip": "192.168.178.36",
+                "token": "96063d79917010599d4a5c93f35029ad29707a093a3285ab64ce43bc109dc3b46024646c8e44a98438e9979498c0befd09d2e44f225a7d04c9af61acb4b61ef4",
+                "token_type": "normal",
+                "user_id": "66721ec5a6e8404bb3c58f032288d938"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://stlas.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2018-10-06T15:29:55.338469+00:00",
+                "id": "337b3ab900ad4d5285faa2c9bcdce3e6",
+                "jwt_key": "446bdae81542349462c3a4aa73facc1fa887af8b2cc09c3981c198d9afbbe05a71f26ab90979ae483f06c31856f22330b6cc75be1646d0ca526a282496ae22ad",
+                "last_used_at": "2018-10-06T22:28:24.678101+00:00",
+                "last_used_ip": "89.244.191.227",
+                "token": "2c0c37007733be206aca49b0fd5db41a91ed6aa1749b07ff7799433a341e7962b0bca0c0f2cf5060cac8e8cb45502f40331668c2f461b121c94c0b1d279a4c3d",
+                "token_type": "normal",
+                "user_id": "66721ec5a6e8404bb3c58f032288d938"
+            }
+        ],
+        "users": [
+            {
+                "id": "66721ec5a6e8404bb3c58f032288d938",
+                "is_active": true,
+                "is_owner": true,
+                "name": "Stefan Laszczyk",
+                "system_generated": false
+            }
+        ]
+    },
+    "key": "auth",
+    "version": 1
+}

@@ -1,0 +1,161 @@
+2018-10-07 15:00:39 WARNING (MainThread) [homeassistant.components.http] legacy_api_password support has been enabled. If you don't require it, remove the 'api_password' from your http config.
+2018-10-07 15:00:42 ERROR (MainThread) [homeassistant.components.mqtt] Failed to connect due to exception: [Errno 113] No route to host
+2018-10-07 15:00:43 WARNING (MainThread) [homeassistant.loader] You are using a custom component for media_player.samsungtv which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you do experience issues with Home Assistant.
+2018-10-07 15:00:45 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity_platform.py", line 345, in _async_add_entity
+    await entity.async_added_to_hass()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/sensor/mqtt.py", line 149, in async_added_to_hass
+    message_received, self._qos)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 279, in async_subscribe
+    topic, msg_callback, qos, encoding)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 659, in async_subscribe
+    await self._async_perform_subscription(topic, qos)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 694, in _async_perform_subscription
+    _raise_on_error(result)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 779, in _raise_on_error
+    'Error talking to MQTT: {}'.format(mqtt.error_string(result_code)))
+homeassistant.exceptions.HomeAssistantError: Error talking to MQTT: The client is not currently connected.
+2018-10-07 15:00:45 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity_platform.py", line 345, in _async_add_entity
+    await entity.async_added_to_hass()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/sensor/mqtt.py", line 149, in async_added_to_hass
+    message_received, self._qos)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 279, in async_subscribe
+    topic, msg_callback, qos, encoding)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 659, in async_subscribe
+    await self._async_perform_subscription(topic, qos)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 694, in _async_perform_subscription
+    _raise_on_error(result)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 779, in _raise_on_error
+    'Error talking to MQTT: {}'.format(mqtt.error_string(result_code)))
+homeassistant.exceptions.HomeAssistantError: Error talking to MQTT: The client is not currently connected.
+2018-10-07 15:00:45 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity_platform.py", line 345, in _async_add_entity
+    await entity.async_added_to_hass()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/sensor/mqtt.py", line 149, in async_added_to_hass
+    message_received, self._qos)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 279, in async_subscribe
+    topic, msg_callback, qos, encoding)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 659, in async_subscribe
+    await self._async_perform_subscription(topic, qos)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 694, in _async_perform_subscription
+    _raise_on_error(result)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 779, in _raise_on_error
+    'Error talking to MQTT: {}'.format(mqtt.error_string(result_code)))
+homeassistant.exceptions.HomeAssistantError: Error talking to MQTT: The client is not currently connected.
+2018-10-07 15:00:45 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity_platform.py", line 345, in _async_add_entity
+    await entity.async_added_to_hass()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/sensor/mqtt.py", line 149, in async_added_to_hass
+    message_received, self._qos)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 279, in async_subscribe
+    topic, msg_callback, qos, encoding)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 659, in async_subscribe
+    await self._async_perform_subscription(topic, qos)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 694, in _async_perform_subscription
+    _raise_on_error(result)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 779, in _raise_on_error
+    'Error talking to MQTT: {}'.format(mqtt.error_string(result_code)))
+homeassistant.exceptions.HomeAssistantError: Error talking to MQTT: The client is not currently connected.
+2018-10-07 15:00:45 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity_platform.py", line 345, in _async_add_entity
+    await entity.async_added_to_hass()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/sensor/mqtt.py", line 149, in async_added_to_hass
+    message_received, self._qos)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 279, in async_subscribe
+    topic, msg_callback, qos, encoding)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 659, in async_subscribe
+    await self._async_perform_subscription(topic, qos)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 694, in _async_perform_subscription
+    _raise_on_error(result)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 779, in _raise_on_error
+    'Error talking to MQTT: {}'.format(mqtt.error_string(result_code)))
+homeassistant.exceptions.HomeAssistantError: Error talking to MQTT: The client is not currently connected.
+2018-10-07 15:00:47 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity_platform.py", line 345, in _async_add_entity
+    await entity.async_added_to_hass()
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/light/mqtt_json.py", line 268, in async_added_to_hass
+    self._qos)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 279, in async_subscribe
+    topic, msg_callback, qos, encoding)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 659, in async_subscribe
+    await self._async_perform_subscription(topic, qos)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 694, in _async_perform_subscription
+    _raise_on_error(result)
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 779, in _raise_on_error
+    'Error talking to MQTT: {}'.format(mqtt.error_string(result_code)))
+homeassistant.exceptions.HomeAssistantError: Error talking to MQTT: The client is not currently connected.
+2018-10-07 15:00:55 ERROR (MainThread) [homeassistant.components.media_player] Error while setting up platform samsungtv
+Traceback (most recent call last):
+  File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/helpers/entity_platform.py", line 128, in _async_setup_platform
+    SLOW_SETUP_MAX_WAIT, loop=hass.loop)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 400, in wait_for
+    return fut.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 293, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/homeassistant/.homeassistant/custom_components/media_player/samsungtv.py", line 76, in setup_platform
+    add_devices([SamsungTVDevice(host, port, name, timeout, mac)])
+  File "/home/homeassistant/.homeassistant/custom_components/media_player/samsungtv.py", line 87, in __init__
+    from wakeonlan import wol
+ImportError: cannot import name 'wol'
+2018-10-07 15:00:58 ERROR (Thread-19) [homeassistant.components.light.yeelight] Failed to connect to bulb 192.168.178.45, Wohnzimmer Yeelight: A socket error occurred when sending the command.
+2018-10-07 15:01:05 WARNING (MainThread) [homeassistant.components.switch] Setup of platform broadlink is taking over 10 seconds.
+2018-10-07 15:01:08 ERROR (Thread-3) [homeassistant.components.switch.broadlink] Failed to connect to device
+2018-10-07 15:01:41 WARNING (MainThread) [homeassistant.components.device_tracker] Updating device list from fritz took longer than the scheduled scan interval 0:00:12
+2018-10-07 15:05:35 WARNING (MainThread) [homeassistant.components.device_tracker] Updating device list from fritz took longer than the scheduled scan interval 0:00:12
+2018-10-07 15:08:24 WARNING (MainThread) [homeassistant.components.device_tracker] Updating device list from fritz took longer than the scheduled scan interval 0:00:12
+2018-10-07 15:08:37 WARNING (MainThread) [homeassistant.components.device_tracker] Updating device list from fritz took longer than the scheduled scan interval 0:00:12
+2018-10-07 15:15:46 WARNING (MainThread) [homeassistant.components.device_tracker] Updating device list from fritz took longer than the scheduled scan interval 0:00:12
+2018-10-07 15:18:47 WARNING (MainThread) [homeassistant.components.device_tracker] Updating device list from fritz took longer than the scheduled scan interval 0:00:12
+2018-10-07 15:32:32 ERROR (MainThread) [homeassistant.components] Invalid config for [group]: Entity ID camera.autobahn_a8_pforzheim-ost_webcam is an invalid entity id for dictionary value @ data['group']['cameras_group']['entities']. Got ['camera.WohnzimmerCam', 'camera.Pforzheim_Dillweissenstein_WebCam', 'camera.Autobahn_A8_Pforzheim-Ost_WebCam']. (See /home/homeassistant/.homeassistant/configuration.yaml, line 167). Please check the docs at https://home-assistant.io/components/group/
+2018-10-07 15:33:09 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:33:23 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:33:32 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:37:10 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:37:18 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:37:28 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:37:38 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:37:48 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:37:58 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:38:08 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:38:17 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:38:27 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:38:37 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:38:47 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:38:57 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:39:07 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:39:17 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:39:28 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:39:38 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:39:48 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:39:58 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:40:08 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:40:17 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:40:28 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:40:38 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:40:47 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:40:55 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-07 15:44:00 ERROR (MainThread) [frontend.js.latest.201809270] http://hassio:8123/frontend_latest/app-084b7564.js:2856:640 Uncaught TypeError: Cannot read property '_stateDisplay' of null
+2018-10-07 15:44:05 ERROR (MainThread) [frontend.js.latest.201809270] http://hassio:8123/local/wired-cards.js:51:23 Uncaught TypeError: Cannot read property 'attributes' of undefined
+2018-10-07 16:00:45 ERROR (MainThread) [homeassistant.components.updater] Got unexpected response: None
+2018-10-07 16:16:35 WARNING (MainThread) [homeassistant.components.device_tracker] Updating device list from fritz took longer than the scheduled scan interval 0:00:12

@@ -1,0 +1,19 @@
+hass_theme:
+  name: HASS Themes
+  options:
+    - default
+    - darkcyan
+    - darkorange
+    - darkred
+    - done1
+    - minimal
+    - PmxDefault
+    - PmxMononight
+    - PmxMonolight
+    - solarized
+    - stormy_hues
+    - teal
+    - vintage
+    - wood
+  initial: default
+  icon: mdi:theme-light-dark

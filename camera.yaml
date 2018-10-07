@@ -1,0 +1,93 @@
+- platform: generic
+  name: WohnzimmerCam
+  still_image_url: http://admin:3bc4Hc@192.168.178.27/tmpfs/auto.jpg
+
+#- platform: generic
+#  name: RaspiWebCam IR
+#  still_image_url: http://raspizero:8081/
+  
+#- platform: generic
+#  name: Bahnhof Pforzheim WebCam
+#  still_image_url: http://stenzelflyfishing.dyndns.org:8001/axis-cgi/jpg/image.cgi?resolution=640x480&dummy=1262938857025
+
+- platform: generic
+  name: Pforzheim Dillweissenstein WebCam
+  still_image_url: https://images.webcams.travel/original/1420927783-Weather-Dillwei%C3%9Fenstein-Baden-W%C3%BCrttemberg%2C-Deutschland-Dillwei%C3%9Fenstein.jpg?token=webcams.travel:10e3e19de3b62e44594bea27f3583fd3:1538836158
+  
+- platform: generic
+  name: Autobahn A8 Pforzheim-Ost WebCam
+  still_image_url: https://images.webcams.travel/webcam/1287075909-Weather-A-8-AS-Pforzheim-Ost-Blickrichtung-Stuttgart-Eutingen.jpg
+  content_type: cgi/jpg/image
+  
+#- platform: generic
+#  name: Pforzheim-Dillweißenstein WebCam
+#  still_image_url: http://dillstein.spdns.org/mjpeg/snap.cgi?chn=0&user=guest&pwd=guest
+#  username: guest
+#  password: guest
+#  content_type: cgi/jpg/image
+
+#- platform: generic
+#  name: Pforzheim Bahnhofstraße WebCam
+#  still_image_url: http://www.panoramablick.com/embed/30006
+  
+- platform: generic
+  name: Weather YR
+  still_image_url: https://www.yr.no/place/Germany/Baden-Württemberg/Stadtkreis_Pforzheim//meteogram.svg
+  content_type: 'image/svg+xml'
+  
+- platform: generic
+  name: Aktuelle Wetterkarte BW
+  still_image_url: https://www.dwd.de/DE/wetter/wetterundklima_vorort/baden-wuerttemberg/_functions/bildgalerie/wetter_aktuell.jpg?view=nasImage&nn=560448
+
+- platform: generic
+  name: Aktuelles Wetterradar BW
+  still_image_url: https://www.dwd.de/DWD/wetter/radar/radfilm_baw_akt.gif
+
+- platform: generic
+  name: Wettervorhersage 72 h Pforzheim
+  still_image_url: https://www.yr.no/place/Germany/Baden-Württemberg/Stadtkreis_Pforzheim/meteogram.svg
+  content_type: 'image/svg+xml'
+
+- platform: generic
+  name: 5 Tage Wettervorhersage Pforzheim
+  still_image_url: http://www.mein-wetter.com/widget4/6715a76ce149421b9e4e70f471528ecf.png
+
+- platform: generic
+  name: Wettervorhersage BW Heute Früh
+  still_image_url: https://www.dwd.de/DWD/wetter/wv_allg/deutschland/bilder/vhs_baw_heutefrueh.jpg
+
+- platform: generic
+  name: Wettervorhersage BW Heute Mittag
+  still_image_url: https://www.dwd.de/DWD/wetter/wv_allg/deutschland/bilder/vhs_baw_heutemittag.jpg
+
+- platform: generic
+  name: Wettervorhersage BW Heute Spät
+  still_image_url: https://www.dwd.de/DWD/wetter/wv_allg/deutschland/bilder/vhs_baw_heutespaet.jpg
+
+- platform: generic
+  name: Wettervorhersage BW Heute Nacht
+  still_image_url: https://www.dwd.de/DWD/wetter/wv_allg/deutschland/bilder/vhs_baw_heutenacht.jpg
+
+- platform: generic
+  name: Wettervorhersage BW Morgen Früh
+  still_image_url: https://www.dwd.de/DWD/wetter/wv_allg/deutschland/bilder/vhs_baw_morgenfrueh.jpg
+
+- platform: generic
+  name: Wettervorhersage BW Morgen Spät
+  still_image_url: https://www.dwd.de/DWD/wetter/wv_allg/deutschland/bilder/vhs_baw_morgenspaet.jpg
+
+- platform: generic
+  name: Wettervorhersage BW Übermorgen Früh
+  still_image_url: https://www.dwd.de/DWD/wetter/wv_allg/deutschland/bilder/vhs_baw_uebermorgenfrueh.jpg
+
+- platform: generic
+  name: Wettervorhersage BW Übermorgen Spät
+  still_image_url: https://www.dwd.de/DWD/wetter/wv_allg/deutschland/bilder/vhs_baw_uebermorgenspaet.jpg
+
+- platform: generic
+  name: Wettervorhersage BW in 4 Tagen Früh
+  still_image_url: https://www.dwd.de/DWD/wetter/wv_allg/deutschland/bilder/vhs_baw_tag4frueh.jpg
+
+- platform: generic
+  name: Wettervorhersage BW in 4 Tagen Spät
+  still_image_url: https://www.dwd.de/DWD/wetter/wv_allg/deutschland/bilder/vhs_baw_tag4spaet.jpg

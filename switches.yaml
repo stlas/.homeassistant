@@ -1,0 +1,5 @@
+- platform: broadlink
+  host: 192.168.178.49
+  mac: "34:EA:34:42:BF:EB"
+  friendly_name: RMpro
+  

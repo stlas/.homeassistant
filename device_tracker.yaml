@@ -1,0 +1,20 @@
+- platform: tado
+  username: stlas1967@gmail.com
+  password: 3bc4Hc123
+  home_id: 30492
+
+- platform: fritz
+  host: 192.168.178.1
+  username: admin
+  password: 3bc4Hc
+  consider_home: 5000
+  track_new_devices: yes
+
+- platform: nmap_tracker
+  home_interval: 100
+  consider_home: 5000
+  hosts: 
+    - 192.168.178.30 # Stefan Handy
+#        name: Stefan Hady IP
+    - 192.168.178.28 # Alessandra Handy
+#        name: Alessandra Hady IP

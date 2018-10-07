@@ -1,0 +1,14 @@
+- platform: enocean
+  id: [0xFE,0xFA,0x67,0xDA]
+  name: EN_SL1_Switch
+#  device_class: light
+
+- platform: enocean
+  id: [0xFE,0xFA,0x70,0xF9]
+  name: EN_SL2_Switch
+
+  
+#- platform: mqtt
+#  state_topic: dummy/floorplan/sensor
+#  name: Floorplan
+#

@@ -1,0 +1,76 @@
+title: HWA33
+# Include external resources
+resources:
+
+# Optional background for all views. Check https://developer.mozilla.org/en-US/docs/Web/CSS/background for more examples.
+background: center / cover no-repeat url("/background.png") fixed
+# Exclude entities from "Unused entities" view
+excluded_entities:
+
+views:
+    # View tab title.
+  - title: Startseite
+    # Optional unique id for direct access /lovelace/${id}
+    id: startseite
+    # Optional background (overwrites the global background).
+    background: radial-gradient(white, skyblue)
+    # Each view can have a different theme applied. Theme should be defined in the frontend.
+    theme: dark-mode
+    # The cards to show on this view.
+    cards:
+        # The filter card will filter entities for their state
+      - type: entity-filter
+        entities:
+          - device_tracker.Stefan
+          - device_tracker.Alessandra
+        state_filter:
+          - 'home'
+        card:
+          type: glance
+          title: Im Augenblick zu Hause
+
+        # The picture entity card will represent an entity with a picture
+      - type: picture-entity
+        image: https://www.home-assistant.io/images/default-social.png
+        entity: light.wohnzimmer
+      
+      - type: picture-entitiy
+        image: http://admin:3bc4Hc@192.168.178.27/tmpfs/auto.jpg
+        entity: light.wohnzimmer
+        
+      - type: iframe
+        url: http://www.panoramablick.com/embed/30006
+        aspect_ratio: 98%
+
+      - type: iframe
+        url: /local/webcam.A8.html
+        aspect_ratio: 58%
+
+    # Specify a tab icon if you want the view tab to be an icon.
+  - icon: mdi:lamp
+    # Title of the view. Will be used as the tooltip for tab icon
+    title: Lampen
+    cards:
+      - type: markdown
+        title: Lampen
+        content: >
+          Hier können Lichter geschaltet werden.
+       # Entities card will take a list of entities and show their state.
+      - type: entities
+        # Title of the entities card
+        title: Wohnzimmer
+        # The entities here will be shown in the same order as specified.
+        # Each entry is an entity ID or a map with extra options.
+        entities:
+          - entity: light.wohnzimmer
+          - entity: hue3KugelLampe
+            name: 3 Kugel-Lampe
+          - entity: light.hue_color_lamp_1
+            name: Obere Kugel
+          - entity: light.hue_color_lamp_2
+            name: Mittlere Kugel
+          - entity: light.hue_color_lamp_3
+            name: Untere Kugel
+          - entity: light.wohnzimmer_yeelight
+            name: Hängelampe
+

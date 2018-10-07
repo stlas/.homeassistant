@@ -1,0 +1,100 @@
+# Weather prediction
+    - platform: yr
+
+    # FritzBox Anrufmonitor
+    - platform: fritzbox_callmonitor
+      host: 192.168.178.1
+      username: stlas
+      password: ronja
+
+    # FritzBox Netzwerkmonitor
+    - platform: fritzbox_netmonitor
+      host: 192.168.178.1
+      username: admin
+      password: 3bc4Hc123
+
+    # DWD Wetterwarnungen
+    - platform: dwd_weather_warnings
+      region_name: "Enzkreis und Stadt Pforzheim"
+
+    # MQTT Wohnzkimmersensoren
+    - platform: mqtt  
+      state_topic: "wohnzimmersensor"  
+      name: "Wohnzimmer Feuchtigkeit"  
+      unit_of_measurement: "%"  
+      value_template: '{{ value_json.humidity | round(1) }}'  
+
+    - platform: mqtt  
+      state_topic: "wohnzimmersensor"  
+      name: "Wohnzimmer Helligkeit"
+      unit_of_measurement: "LUX"  
+      value_template: '{{ value_json.ldr }}'  
+
+    - platform: mqtt  
+      state_topic: "wohnzimmersensor"  
+      name: "Wohnzimmer Bewegung"  
+      value_template: '{{ value_json.motion }}'  
+
+    - platform: mqtt  
+      state_topic: "wohnzimmersensor"  
+      name: "Wohnzimmer Temperatur"  
+      unit_of_measurement: "°F"  
+      value_template: '{{ value_json.temperature | round(1) }}'  
+
+    - platform: mqtt
+      state_topic: "wohnzimmersensor"
+      name: "Wohnzimmer Wahrnehmungstemperatur"
+      unit_of_measurement: "°F"
+      value_template: '{{ value_json.heatIndex | round(1) }}'
+
+    # SABnzbd
+    - platform: sabnzbd
+      host: 192.168.178.62
+      port: 8085
+      api_key: 2753064a25e0f750e3d3c56bb7b3ef52
+      monitored_variables:
+        - 'current_status'
+        - 'speed'
+        - 'queue_size'
+        - 'queue_remaining'
+        - 'disk_size'
+        - 'disk_free'
+        - 'queue_count'
+        
+    # Darksky
+    - platform: darksky
+      api_key: 6769922a582222c60748e1fddc86347e
+      monitored_conditions:
+        - summary
+        - icon
+        - nearest_storm_distance
+        - precip_type
+        - precip_intensity
+        - precip_probability
+        - temperature
+        - apparent_temperature
+        - dew_point
+        - wind_speed
+        - wind_bearing
+        - cloud_cover
+        - humidity
+        - pressure
+        - visibility
+        - ozone
+        - minutely_summary
+        - hourly_summary
+        - daily_summary
+#        - temperature_max
+#        - temperature_min
+#        - apparent_temperature_max
+#        - apparent_temperature_min
+        - precip_intensity_max
+        - uv_index
+      units: auto
+      update_interval:
+        # At least one of these must be specified:
+        days: 0
+        hours: 0
+        minutes: 5
+        seconds: 0
+        milliseconds: 0

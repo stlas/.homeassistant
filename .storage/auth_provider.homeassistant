@@ -1,0 +1,13 @@
+{
+    "data": {
+        "salt": "47856a0158a42f89453bf9910626cf7911b16bf0648890a258a1479fcddd8147",
+        "users": [
+            {
+                "password": "JDJiJDEyJE5aN2o0aWMwVTZ2UjI5YVo0L3I1eU9LNVh4OEllUGV1dlRzb2lLNDM2ZWtYYzVzNVYzREhp",
+                "username": "stlas"
+            }
+        ]
+    },
+    "key": "auth_provider.homeassistant",
+    "version": 1
+}

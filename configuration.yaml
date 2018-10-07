@@ -1,0 +1,177 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: HWA33
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret basic_latitude
+  longitude: !secret basic_longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Berlin
+  # Customization file
+  customize: !include customize.yaml
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+
+# Text to speech
+tts:
+  - platform: google
+
+# Cloud
+cloud:
+
+#group: !include groups.yaml
+#automation: !include automations.yaml
+#script: !include scripts.yaml
+
+
+################################################ SL ####################################################
+
+panel_iframe:
+  configurator:
+    title: Configurator
+    icon: mdi:wrench
+    url: http://hassio:3218
+
+
+panel_custom:
+  - name: sl_01
+    sidebar_title: Fernsteuerung
+    sidebar_icon: mdi:checkbox-marked-outline
+    config:
+      title: Fernsteuerung
+#  - name: floorplan
+#    sidebar_title: Floorplan
+#    sidebar_icon: mdi:home
+#    url_path: floorplan
+#    config: !include floorplan.yaml
+
+media_player:
+  - platform: kodi
+    host: 192.168.178.38
+    name: Kodi xtreamer
+
+  - platform: kodi
+    host: 192.168.178.73
+    name: Kodi LibreELEC
+
+  - platform: samsungtv
+    host: 192.168.178.54
+    port: 8001
+    name: Q9F TV
+    timeout: 10
+    turn_on_action:
+    service: wake_on_lan.send_magic_packet
+    data:
+    mac: 84:C0:EF:BF:EC:25
+
+tado:
+  username: !secret tado_username
+  password: !secret tado_password
+
+notify:
+  - name: Pushbullet
+    platform: pushbullet
+    api_key: !secret notify_api_key
+  - platform: html5
+    name: html_5
+    gcm_api_key: 'gcm-server-key'
+    gcm_sender_id: 'gcm-sender-id'
+ifttt:
+  key: !secret ifttt_key
+
+
+enocean:
+  device: /dev/ttyUSB0
+
+#zwave:
+#  device: /dev/ttyACM0
+#  device: /dev/ttyAMA0
+
+remote:
+  - platform: harmony
+    name: Harmony Wohnzimmer
+    host: 192.168.178.57   # The IP of your hub
+
+mqtt:  
+  broker: 192.168.178.63  
+  port: 1883  
+  client_id: home-assistant-1  
+  username: homeassistant  
+  password: mqtt_password
+  
+wake_on_lan:
+  mac: "84:C0:EF:BF:EC:25"
+  
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+#frontend:
+#  themes: !include_dir_merge_named themes/
+#  extra_html_url:
+#    - /local/custom_ui/state-card-floorplan.html
+
+xiaomi_aqara:
+  discovery_retry: 10
+#  interface: 192.168.178.46
+  gateways:
+#    - mac: 34CE008D61F1
+      key: !secret xiaomi_aqara_key
+
+http:
+  # Secrets are defined in the file secrets.yaml
+  api_password: !secret http_password
+  base_url: stlas.duckdns.org:8123
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+camera: !include camera.yaml
+device_tracker: !include device_tracker.yaml
+sensor: !include sensor.yaml
+switch: !include switches.yaml
+binary_sensor: !include binary_sensor.yaml
+light: !include light.yaml
+input_select: !include input_select.yaml

@@ -1,0 +1,206 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.temperature_158d0002100f5a",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "temperature158d0002100f5a"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.humidity_158d0002100f5a",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "humidity158d0002100f5a"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_34ce008d61f1",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "illumination34ce008d61f1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.switch_158d00010e5b87",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00010e5b87"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.switch_158d0001e18b54",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001e18b54"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d0001b1603a",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001b1603a"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.door_window_sensor_158d0001aac2de",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001aac2de"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d0001de7ea1",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001de7ea1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.gateway_light_34ce008d61f1",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "rgb34ce008d61f1"
+            },
+            {
+                "config_entry_id": "1e515b5d2cb147d9a30ade93d6f44b33",
+                "device_id": "68775ba8c041459a9166623c7712389d",
+                "disabled_by": null,
+                "entity_id": "media_player.kuche",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "478bdfe4-80eb-0481-15f8-a29cd73d45dc"
+            },
+            {
+                "config_entry_id": "1e515b5d2cb147d9a30ade93d6f44b33",
+                "device_id": "5568b51d2d9d435aa383a1a6d115b452",
+                "disabled_by": null,
+                "entity_id": "media_player.stefan",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "3d777ea8-ef92-9783-ebe7-c06a7848b2e1"
+            },
+            {
+                "config_entry_id": "5d528dba233f495aaaec3adc5d10da07",
+                "device_id": "34b2445f5d104d34bfffffb79d6e6c93",
+                "disabled_by": null,
+                "entity_id": "light.hue_color_lamp_1",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:03:03:ac:0b-0b"
+            },
+            {
+                "config_entry_id": "5d528dba233f495aaaec3adc5d10da07",
+                "device_id": "d01e8ada38d5413c965958c22758a12e",
+                "disabled_by": null,
+                "entity_id": "light.hue_color_lamp_3",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:03:fa:22:b7-0b"
+            },
+            {
+                "config_entry_id": "5d528dba233f495aaaec3adc5d10da07",
+                "device_id": "cc3264be9d4149738d0410b09fbe7be3",
+                "disabled_by": null,
+                "entity_id": "light.hue_color_lamp_2",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:03:86:03:ca-0b"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heizung_heating",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "heating 1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.hwa33_tado_bridge_status",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado bridge status 30492"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heizung_power",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "power 1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heizung_humidity",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "humidity 1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heizung_overlay",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "overlay 1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heizung_temperature",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "temperature 1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heizung_tado_mode",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "tado mode 1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heizung_link",
+                "name": null,
+                "platform": "tado",
+                "unique_id": "link 1"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

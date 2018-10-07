@@ -1,0 +1,68 @@
+<!--
+Stefan Laszczyk 
+UPNP Fernseteuerungs-Seite
+Version 0.2
+2018-01-10
+-->
+
+<dom-module id='ha-panel-sl_01'>
+  <template>
+    <style>
+      .greeting {
+        padding: 16px;
+        font-weight: bold;
+      }
+    </style>
+    <h1 class="greeting">Fernsteuerungen</h1>
+	<p class="greeting">Links zu laufenden UPNP Fernsteuerungen:</p>
+	<ul>
+		<li><a href="http://libreelec:8080/" target="_blank">KODI LibreELEC</a></li>
+		<li><a href="http://tp_e531:9001/" target="_blank">UniversalMediaServer TP E531</a></li>
+	</ul>
+    <h1 class="greeting">Weitere Links</h1>
+	<p class="greeting">Links zu weiteren Lokalen Angeboten:</p>
+	<ul>
+		<li><a href="http://192.168.178.1/" target="_blank">Fritz.box</a></li>
+		<li><a href="http://tp_e531:9001/" target="_blank">Universal Media Server</a></li>
+		<li><a href="http://sl-cloud/" target="_blank">SL-Clouud Verwaltung</a></li>
+		<li><a href="http://192.168.178.21:9000/" target="_blank">SL-Cloud Mediaserver</a></li>
+		<li><a href="http://libreelec:9981/extjs.html" target="_blank">Tvheadend LibreELEC</a></li>
+		<li><a href="http://192.168.178.27/web/admin.html" target="_blank">IP CAM</a></li>
+	</ul>
+  </template>
+</dom-module>
+
+<script>
+Polymer({
+  is: 'ha-panel-sl_01',
+  properties: {
+    // Home Assistant object
+    hass: {
+      type: Object,
+    },
+    // If should render in narrow mode
+    narrow: {
+      type: Boolean,
+      value: false,
+    },
+    // If sidebar is currently shown
+    showMenu: {
+      type: Boolean,
+      value: true,
+    },
+    // Home Assistant panel info
+    // panel.config contains config passed to register_panel serverside
+    panel: {
+      type: Object,
+    },
+    who: {
+      type: String,
+      computed: 'computeWho(panel)',
+    }
+  },
+
+  computeWho: function (panel) {
+    return panel && panel.config && panel.config.who ? panel.config.who : 'World';
+  },
+});
+</script>
